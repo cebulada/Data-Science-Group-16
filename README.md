@@ -2,75 +2,91 @@
 
 ## Group 16 Members
 
-- 1. Su Wang
-- 2. Mabi MAbbayad
-- 3. Kira Xue
-- 4. Igor Jajcanin
-- 5. Daniel Adam Cebula
+- 1. Su Wang - [Email](mailto:s399wang@uwaterloo.ca)
+- 2. Mabi MAbbayad - [Email](mailto:mmabbaya@uwaterloo.ca)
+- 3. Kira Xue - [Email](mailto:w27xue@uwaterloo.ca)
+- 4. Igor Jajcanin - [Email](mailto:ijajcani@uwaterloo.ca)
+- 5. Daniel Adam Cebula - [Email](mailto:dacebula@uwaterloo.ca)
+- 6. Wenwen Shi - [Email](mailto:w65shi@uwaterloo.ca)
 
-## Introduction
+## Group Topic
 
-I have taken the liberty of exploring datasets for us to do one of the following type of analyses in our project:
+- Our group would like to study the Citibike New York City data set from Oct. 2015 - Oct. 2020.
+    - [Link](https://www.citibikenyc.com/system-data) to System Data
+    - [Link](https://s3.amazonaws.com/tripdata/index.html) to s3 bucket of all datasets
 
-1. Make a hypothesis about a correlation in a dataset and test the hypothesis using a statistical inference technique (such as the t-test).
-2. Build a predictive model using one of the techniques covered in the course, i.e., ordinary least squares regression or Naïve Bayes.
+## DataFrame and Columns
 
-Apparently over the course of this project we will need to:
+- We will explore a 5 year data set that has the following dataframe structure.
 
-1. Collaborate with peers to solve a Data Science Problem
-2. Work in a group setting to complete a challenge within an agreed-upon time frame
-3. Engage with peers to discover their problem-solving process and lessons learned
-4. Carry out a statistical analysis using real data
-5. Hone Skills in explaining technical details to a non-technical audience
+ |    |   tripduration | starttime         | stoptime          |   start station id | start station name      |   start station latitude |   start station longitude |   end station id | end station name      |   end station latitude |   end station longitude |   bikeid | usertype   |   birth year |   gender |
+|---:|---------------:|:------------------|:------------------|-------------------:|:------------------------|-------------------------:|--------------------------:|-----------------:|:----------------------|-----------------------:|------------------------:|---------:|:-----------|-------------:|---------:|
+|  0 |           1202 | 8/1/2015 00:00:04 | 8/1/2015 00:20:07 |                168 | W 18 St & 6 Ave         |                  40.7397 |                  -73.9946 |              385 | E 55 St & 2 Ave       |                40.758  |                -73.966  |    23253 | Subscriber |         1987 |        1 |
+|  1 |            301 | 8/1/2015 00:00:05 | 8/1/2015 00:05:06 |                450 | W 49 St & 8 Ave         |                  40.7623 |                  -73.9879 |              479 | 9 Ave & W 45 St       |                40.7602 |                -73.9913 |    22675 | Subscriber |         1951 |        2 |
+|  2 |            431 | 8/1/2015 00:00:06 | 8/1/2015 00:07:18 |                312 | Allen St & E Houston St |                  40.7221 |                  -73.9891 |              296 | Division St & Bowery  |                40.7141 |                -73.997  |    19831 | Subscriber |         1985 |        1 |
+|  3 |            273 | 8/1/2015 00:00:09 | 8/1/2015 00:04:43 |                382 | University Pl & E 14 St |                  40.7349 |                  -73.992  |              229 | Great Jones St        |                40.7274 |                -73.9938 |    22765 | Subscriber |         1975 |        1 |
+|  4 |           1256 | 8/1/2015 00:00:17 | 8/1/2015 00:21:13 |                352 | W 56 St & 6 Ave         |                  40.7634 |                  -73.9772 |              432 | E 7 St & Avenue A     |                40.7262 |                -73.9838 |    22127 | Subscriber |         1978 |        1 |
+|  5 |            739 | 8/1/2015 00:00:24 | 8/1/2015 00:12:44 |                212 | W 16 St & The High Line |                  40.7433 |                  -74.0068 |              498 | Broadway & W 32 St    |                40.7485 |                -73.9881 |    19293 | Subscriber |         1988 |        1 |
+|  6 |            433 | 8/1/2015 00:00:30 | 8/1/2015 00:07:43 |                388 | W 26 St & 10 Ave        |                  40.7497 |                  -74.003  |              284 | Greenwich Ave & 8 Ave |                40.739  |                -74.0026 |    19115 | Subscriber |         1976 |        1 |
+|  7 |           1575 | 8/1/2015 00:00:33 | 8/1/2015 00:26:49 |                492 | W 33 St & 7 Ave         |                  40.7502 |                  -73.9909 |              492 | W 33 St & 7 Ave       |                40.7502 |                -73.9909 |    20532 | Customer   |          nan |        0 |
+|  8 |            843 | 8/1/2015 00:00:39 | 8/1/2015 00:14:43 |                387 | Centre St & Chambers St |                  40.7127 |                  -74.0046 |              391 | Clark St & Henry St   |                40.6976 |                -73.9934 |    24273 | Customer   |          nan |        0 |
+|  9 |            467 | 8/1/2015 00:00:49 | 8/1/2015 00:08:37 |                285 | Broadway & E 14 St      |                  40.7345 |                  -73.9907 |              284 | Greenwich Ave & 8 Ave |                40.739  |                -74.0026 |    17688 | Subscriber |         1976 |        1 | 
 
-## Potential Group Topics
+- The following columns are present
+    - Trip Duration
+        - in seconds
+    - Start Time and Date of Trip
+        - Date and Time in Eastern Standard Time Zone (GMT - 5)
+    - End Time and Date of Trip
+        - Date and Time in Eastern Standard Time Zone (GMT - 5)
+    - Start / End Station Name
+        - Name of Station that trip started and ended in
+    - Start / End Station ID
+        - ID of Station that trip started and ended in
+    - Start / End Station Latitude and Longitude
+        - Latitude and Longitude of Station that trip started and ended in
+    - Bike ID
+        - unique ID of bike used during trip
+    - User Type
+        - Customer
+            - 24 hour or 72 hour member
+        - Subscriber
+            - Annual member
+    - Gender of rider (self-reported)
+        - 0
+            - Unknown
+        - 1
+            - Male
+        - 2
+            - Female
+    - Year of Birth of rider (self-reported)
+        - ex. 1900
 
-### 1. [Long-Term Care Home COVID-19 Data - Open Ontario](https://data.ontario.ca/dataset/long-term-care-home-covid-19-data)
+## Type of Analysis
 
-- I have attached summarized data from the dataset over the testing of various Long Term Care Homes
-- time series analysis? naive bayes?
+- Our group would like to do several types of analysis with the dataset
 
-![Summary Data](./images/COVID-19_Data.PNG)
+- 1. Time Series Analysis of all Bicycle Trips summarized by hour / day / week / month aggregation with the following dependant attributes:
+    - trip duration
+    - trip distance (calculated by Haversine formula using Latitude and Longitude values)
+    - count of each user types (pivot column)
+    - count of each start station (pivot column)
+    - count of each end station (pivot column)
+    - count of each gender (pivot column)
+    - count of each birth year (pivot column)
 
-### 2. [Confirmed positive cases of COVID-19 in Ontario - Open Ontario](https://data.ontario.ca/dataset/confirmed-positive-cases-of-covid-19-in-ontario)
+- 2. Perform Bayesian Analysis of Bike Trip Data (Naive Bayes)
+    - modify several parameters and observe the changes in simulated Bike Trip data
 
-- I have attached all positive cases for COVID that exists in Ontario
-- There exists a geojson file as well (maybe we can relate geospatial data)
-- Generate statistics on your odds of infection within Ontario
-- Maybe model virus movement over time?
+## Project Requirements
 
-![Raw Data](./images/Positive_COVID_Cases.PNG)
+- 1. Make a hypothesis about a correlation in a dataset and test the hypothesis using a statistical inference technique (such as the t-test).
+- 2. Build a predictive model using one of the techniques covered in the course, i.e., ordinary least squares regression or Naïve Bayes.
 
-### 3. [Toronto Homeless Shelter Daily Occupancy](https://open.toronto.ca/dataset/daily-shelter-occupancy/)
+## Group Project Requirements
 
-- Check the occupancy of various homeless shelters at points in time
-- time series data
-- observe if current world events had occupancy effects
-- 2017 - 2020 data range
-
-![Raw Data](./images/Toronto_Shelter.PNG)
-
-### 4. [Toronto Parking Tickets](https://open.toronto.ca/dataset/parking-tickets/)
-
-- Parking Tickets from 2008 - 2018 at points in time
-- time series data
-- observe if seasons, months, world events have ticketing differences
-
-![Parking Tickets](./images/Parking_Tickets.PNG)
-
-### 5. [Toronto Bicycle Thefts](https://open.toronto.ca/dataset/bicycle-thefts/)
-
-- Bicycle Thefts (big thing in Toronto) from 2014 - 2019
-- maybe determine the change in geospatial data all bicycle thefts
-- current events, months, or seasons could affect bicycle thefts
-- We can maybe use Google Maps API to plot data on jupyter notebook
-
-![Bicycle Thefts](./images/Bicycle_Theft.PNG)
-
-### 6. [PUBG Match Deaths and Statistics](https://www.kaggle.com/skihikingkevin/pubg-match-deaths)
-
-- a little left field but we can look at the data and determine what kind of distribution the different statistics follow
-- predict how to ensure your highest survival within the game PUBG
-- 4GB but we could just take a subset of it  ~100 MB
-
-![PUBG](./images/PUBG.PNG)
+- 1. Collaborate with peers to solve a Data Science Problem
+- 2. Work in a group setting to complete a challenge within an agreed-upon time frame
+- 3. Engage with peers to discover their problem-solving process and lessons learned
+- 4. Carry out a statistical analysis using real data
+- 5. Hone Skills in explaining technical details to a non-technical audience
