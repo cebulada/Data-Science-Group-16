@@ -14,6 +14,10 @@ api_keys.py
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
+Citibike_Data/
+Citibike_Aggregate/
+Citibike_Clean/
+
 # IPython
 profile_default/
 ipython_config.py
