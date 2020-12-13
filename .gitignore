@@ -17,6 +17,7 @@ api_keys.py
 Citibike_Data/
 Citibike_Aggregate/
 Citibike_Clean/
+Time_Series/
 
 # IPython
 profile_default/
