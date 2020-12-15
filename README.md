@@ -3,7 +3,7 @@
 ## Group 16 Members
 
 - 1. Su Wang - [Email](mailto:s399wang@uwaterloo.ca)
-- 2. Mabi MAbbayad - [Email](mailto:mmabbaya@uwaterloo.ca)
+- 2. Mabi Mabbayad - [Email](mailto:mmabbaya@uwaterloo.ca)
 - 3. Kira Xue - [Email](mailto:w27xue@uwaterloo.ca)
 - 4. Igor Jajcanin - [Email](mailto:ijajcani@uwaterloo.ca)
 - 5. Daniel Adam Cebula - [Email](mailto:dacebula@uwaterloo.ca)
